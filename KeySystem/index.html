@@ -1,0 +1,93 @@
+<html><script async="" src="./Whitelist System_files/analytics.js.atsisiųsti"></script><script type="text/javascript" async="" src="./Whitelist System_files/recaptcha__en_gb.js.atsisiųsti" crossorigin="anonymous" integrity="sha384-vzVwiYiQ4fh7JABqLCIyMh6HZ3SBUAjm3vPOTrB09snx1SCzgOlei68p96tH7RO1"></script><script>
+    Object.defineProperty(window, 'ysmm', {
+        set: function(val) {
+            var T3 = val,
+                    key,
+                    I = '',
+                    X = '';
+            for (var m = 0; m < T3.length; m++) {
+                if (m % 2 == 0) {
+                    I += T3.charAt(m);
+                } else {
+                    X = T3.charAt(m) + X;
+                }
+            }
+            T3 = I + X;
+            var U = T3.split('');
+            for (var m = 0; m < U.length; m++) {
+                if (!isNaN(U[m])) {
+                    for (var R = m + 1; R < U.length; R++) {
+                        if (!isNaN(U[R])) {
+                            var S = U[m]^U[R];
+                            if (S < 10) {
+                                U[m] = S;
+                            }
+                            m = R;
+                            R = U.length;
+                        }
+                    }
+                }
+            }
+            T3 = U.join('');
+            T3 = window.atob(T3);
+            T3 = T3.substring(T3.length - (T3.length - 16));
+            T3 = T3.substring(0, T3.length - 16);
+            key = T3;
+            if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+                document.write('<!--');
+                window.stop();
+    
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        }
+    });
+    
+    Object.defineProperty(window, 'source', {
+        set (v) {
+            const url = new URL(location.protocol + location.hostname + v);
+            const key = url.searchParams.get('allb');
+            if (key && (key.indexOf('http://') === 0 || key.indexOf('https://') === 0)) {
+                document.write('<!--');
+                window.stop();
+                
+                window.onbeforeunload = null;
+                window.location = key;
+            }
+        },
+    });
+    </script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    
+    <link rel="stylesheet" type="text/css" href="./Whitelist System_files/style.css">
+    <link rel="icon" href="https://painexist.gg/assets/img/favicon.png">
+    <link href="./Whitelist System_files/css" rel="stylesheet">
+    <link href="./Whitelist System_files/icon" rel="stylesheet">
+    <link href="./Whitelist System_files/css(1)" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EternalDarkness">
+    <meta property="og:title" content="EternalDarkness">
+    <meta property="og:description" content="Automatically generated validation key.">
+    <title>Whitelist System</title>
+    <script src="./Whitelist System_files/api.js.atsisiųsti" async="" defer=""></script>
+    </head>
+    <body>
+    <div class="site-container">
+    <div class="ad-holder">
+    </div>
+    <div class="site-card">
+    <span class="card-title">EternalDarkness Validation Key</span>
+    <span class="card-desc">This is your validation key.</span>
+    <div class="key-container">
+    <span class="card-icon"><i class="material-icons">vpn_key</i></span>
+    <iframe style="position: relative; left: 38px; border-radius: 5px; overflow: hidden;" src="key.txt" height = "45"  width = "370">
+        Your Browser doesn't support Frames!
+    </iframe>
+    </div>
+    
+    </div>
+    </div>
+    
+    
+    </body></html>
